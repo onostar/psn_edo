@@ -206,16 +206,22 @@ h1 a{
 #user_header h1 a{
     color:rgba(0, 0, 0, .7);
 }
+#mainHeader h1{
+    width:20vw;
+}
+#mainHeader h1 img{
+    width:30%;
+}
 h1 a #main_t{
-    letter-spacing: 10px;
-    font-size:2.5rem;
+    letter-spacing: 15px;
+    font-size:2rem;
     margin:0;
     padding:0;
     height:100%;
 }
 h1 a #sub_t{
     display:block;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size:.8rem;
     margin:0;
     padding:0;
@@ -2463,7 +2469,7 @@ main hr{
 }
 .allResults .results .no_result, .no_result{
     margin:20px;
-    font-size:1.3rem;
+    font-size:1.1rem;
     text-transform: capitalize;
     text-align:center;
     color:chocolate;
@@ -2691,7 +2697,7 @@ color: rgb(231, 226, 226);
     border-radius: 50%;
     margin:0 5px;
     color:var(--otherColor);
-    animation:1s rotate infinite;
+    /* animation:1s rotate infinite; */
     animation-timing-function: linear;
 }
 @keyframes rotate{
@@ -2975,7 +2981,7 @@ color: rgb(231, 226, 226);
 .displays{
     display:none;
     width:90%!important;
-    margin:0 auto!important;
+    margin:30px auto!important;
 }
 #hotels{
     display:none;
@@ -3538,6 +3544,31 @@ img{
     box-shadow: none;
 
 }
+.staff_not{
+    text-align:center;
+    background:#fff;
+    box-shadow: 2px 2px 2px #c4c4c4;
+    width:30%;
+    height:auto;
+    margin:0 auto;
+    padding:20px;
+
+}
+.staff_not a{
+    color:red;
+    font-size:1rem;
+}
+.reg_pcn{
+    display:flex;
+}
+.tech_groups h2{
+    background:red;
+    color:#fff;
+    padding:10px;
+    text-align: center;
+    font-size:1.2rem;
+}
+
 @media screen and (max-width: 800px){
     #topHeader{
         justify-content: space-between;
@@ -3563,22 +3594,22 @@ img{
         border-bottom:2px solid #c4c4c4;
     }
     .main_header h1{
-        width:55vw;
+        width:70vw!important;
         margin-left:10px;
         padding:0;
     }
     .new_header h1{
-        width:45vw;
+        width:70vw!important;
         padding:0;
-        margin-left:20px;
+        margin-left:10px;
     }
     .main_header h1 img{
-        width:45%;
+        width:100%;
         margin:10px 0;
         height:13vh;
     }
     .new_header h1 img{
-        width:45%;
+        width:100%;
         margin:5px;
     }
     #user_header h1{

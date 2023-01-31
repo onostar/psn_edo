@@ -59,7 +59,7 @@
             else 
 
             {
-                $_SESSION['success'] = "$post_subject posted successfully!";
+                $_SESSION['success'] = "News posted successfully!";
                 header("Location: ../views/admin.php");
                 
                 // header("Location: index.html");

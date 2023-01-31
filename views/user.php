@@ -174,7 +174,7 @@
                     </div>
                     <div class="cards" id="card5">
                         <a href="javascript:void(0)">
-                            <p>Registration status</p>
+                            <p>Clearance status</p>
                             <div class="infos">
                                 <?php
                                     $get_status = $connectdb->prepare("SELECT payment_status FROM payments WHERE pcn_number = :pcn_number AND YEAR(tdate) = YEAR(CURDATE())");

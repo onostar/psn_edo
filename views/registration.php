@@ -131,7 +131,7 @@
                         </div>
                     
                         <div class="data" id="reg_btn">
-                            <button type="submit" name="register_exhibitor" id="register_exhibitor">Register <i class="fas fa-paper-plane"></i></button>
+                            <button type="submit" name="register_user" id="register_user">Register <i class="fas fa-paper-plane"></i></button>
                             
                         </div>
                         
