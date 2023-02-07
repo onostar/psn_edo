@@ -123,13 +123,26 @@
                                     <option value="Uhunmwonde">Uhunmwonde</option>
                                 </select>
                             </div>
-                            
                             <div class="data">
+                                <select name="tech_group" id="tech_group">
+                                    <option value=""selected>Select Technical group</option>
+                                    <option value="PSN-YPG">PSN-YPG</option>
+                                    <option value="ACPN">ACPN</option>
+                                    <option value="NAPA">NAPA</option>
+                                    <option value="NAIP">NAIP</option>
+                                    <option value="ALPS">ALPS</option>
+                                    <option value="CPAN">CPAN</option>
+                                    <option value="AHAPN">AHAPN</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                        <div class="inputs">
+                        <div class="data">
                                 <label for="passport">Upload Passport photograph</label>
                                 <input type="file" name="passport" id="passport" required>
                             </div>
                         </div>
-                    
                         <div class="data" id="reg_btn">
                             <button type="submit" name="register_user" id="register_user">Register <i class="fas fa-paper-plane"></i></button>
                             

@@ -416,9 +416,25 @@
                                 
                                 
                             </div>
-                            <div class="data">
-                                <button type="submit" id="update" name="update">Update Profile <i class="fas fa-user"></i></button>
+                            <div class="inputs">
+                                <div class="data">
+                                    <label for="tech_group">Technical group</label>
+                                    <select name="tech_group" id="tech_group">
+                                        <option value="<?php echo $user->tech_group?>"><?php echo $user->tech_group?></option>
+                                        <option value="PSN-YPG">PSN-YPG</option>
+                                        <option value="ACPN">ACPN</option>
+                                        <option value="NAPA">NAPA</option>
+                                        <option value="NAIP">NAIP</option>
+                                        <option value="ALPS">ALPS</option>
+                                        <option value="CPAN">CPAN</option>
+                                        <option value="AHAPN">AHAPN</option>
+                                    </select>
+                                </div>
+                                <div class="data">
+                                    <button type="submit" id="update" name="update">Update Profile <i class="fas fa-user"></i></button>
+                                </div>
                             </div>
+                            
                         </form>
                     </div>  
                 </div>

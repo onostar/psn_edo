@@ -15,9 +15,10 @@
         $pharmacy = ucwords(htmlspecialchars(stripslashes($_POST['pharmacy'])));
         $pharmacy_address = ucwords(htmlspecialchars(stripslashes($_POST['pharmacy_address'])));
         $email = htmlspecialchars(stripslashes($_POST['user_email']));
+        $group = htmlspecialchars(stripslashes($_POST['tech_group']));
         $dob = $_POST['dob'];
         /* update profile */
-            $update_profile = $connectdb->prepare("UPDATE users SET first_name = :first_name, last_name = :last_name, phone_number = :phone_number, gender = :gender, pharmacy = :pharmacy, pharmacy_location = :pharmacy_location, pharmacy_address = :pharmacy_address, user_email = :user_email, dob = :dob, pharmacist_class = :pharmacist_class WHERE user_id = :user_id");
+            $update_profile = $connectdb->prepare("UPDATE users SET first_name = :first_name, last_name = :last_name, phone_number = :phone_number, gender = :gender, pharmacy = :pharmacy, pharmacy_location = :pharmacy_location, pharmacy_address = :pharmacy_address, user_email = :user_email, dob = :dob, pharmacist_class = :pharmacist_class, tech_group = :tech_group WHERE user_id = :user_id");
             $update_profile->bindvalue("first_name", $first_name);
             $update_profile->bindvalue("last_name", $last_name);
             $update_profile->bindvalue("phone_number", $phone_number);
@@ -28,6 +29,7 @@
             $update_profile->bindvalue("pharmacist_class", $class);
             $update_profile->bindvalue("dob", $dob);
             $update_profile->bindvalue("gender", $gender);
+            $update_profile->bindvalue("tech_group", $group);
             $update_profile->bindvalue("user_id", $id);
             $update_profile->execute();
 

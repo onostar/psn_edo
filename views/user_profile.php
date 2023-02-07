@@ -106,17 +106,22 @@
                     ?>
                 </div>
                 <div class="main_details">
-                    <div class="inputs">
+                    <div class="inputs" style="align-items:center">
                         <div class="data">
                             <div class="profile_img">
                                 <img src="<?php echo "../passports/".$user->passport?>" alt="Passport">
                             </div>
                         </div>
-                        <div class="data">
-                            <h3>PCN: <?php echo $user->pcn_number;?></h3>
-                        </div>
-                        <div class="data">
-                            <h3>Reg_number: <?php echo $user->reg_number;?></h3>
+                        <div style="display:flex; gap:2rem; align-items:center">
+                            <div class="data">
+                                <h3 style="color:#fff; background:red; font-weight:bold"><?php echo $user->tech_group;?> Member</h3>
+                            </div>
+                            <div class="data">
+                                <h3>PCN: <?php echo $user->pcn_number;?></h3>
+                            </div>
+                            <div class="data">
+                                <h3>Reg_number: <?php echo $user->reg_number;?></h3>
+                            </div>
                         </div>
                     </div>
                     
